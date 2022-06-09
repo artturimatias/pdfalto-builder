@@ -1,8 +1,9 @@
 # pdfalto-builder
 Docker setup for building pdfalto (quick and dirty)
+
 NOTE! Currently works only with podman
 
-#Building
+# Building
 
 	git clone https://github.com/artturimatias/pdfalto-builder.git
 
