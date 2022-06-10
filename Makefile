@@ -7,6 +7,9 @@ PWD=$(shell pwd)
 build:
 	docker build -v $(PWD)/pdfalto:/home/pdfalto:z -t artturimatias/$(IMAGE) .
 
+build_docker:
+	docker build -t artturimatias/$(IMAGE) .
+
 clean:
 	docker rm -f $(CONTAINERS)
 	docker rmi -f $(IMAGES)
