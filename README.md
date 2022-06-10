@@ -1,5 +1,6 @@
 # pdfalto-builder
-Docker setup for building and usingpdfalto (quick and dirty)
+Docker setup for building and using pdfalto (quick and dirty)
+
 https://github.com/kermitt2/pdfalto
 
 
