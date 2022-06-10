@@ -11,7 +11,7 @@ COPY install_deps.sh /home/pdfalto
 WORKDIR /home/pdfalto 
 #RUN git submodule update --init --recursive
 RUN ./install_deps.sh 
-RUN cmake . && make 
+RUN cd /home/pdfalto && cmake . && make 
 
 #ENTRYPOINT ["tail", "-f", "/dev/null"]
 
