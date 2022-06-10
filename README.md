@@ -21,11 +21,7 @@ You can now create a directory called "input" where you place your PDF files (MY
 Then just call pdfalto like this: 
 
 
-	docker run --rm \
-		-v ${PWD}/input:/home/pdfalto/input:z \ 
-		-v ${PWD}/output/:/home/pdfalto/output:z \ 
-		artturimatias/pdfalto-builder \
-		./pdfalto input/MYPDF.pdf output/MYPDF.xml
+	docker run --rm -v ${PWD}/input:/home/pdfalto/input:z -v ${PWD}/output/:/home/pdfalto/output:z artturimatias/pdfalto-builder ./pdfalto input/MYPDF.pdf output/MYPDF.xml
 
 
 You can omit the last argument (./output/MYPDF.xml). In that case xml files are created in the "input" directory among with original pdf files. 
