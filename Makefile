@@ -4,10 +4,10 @@ IMAGE := pdfalto-builder
 PWD=$(shell pwd)
 
 
-build:
+build_bin:
 	docker build -v $(PWD)/pdfalto:/home/pdfalto:z -t artturimatias/$(IMAGE) .
 
-build_docker:
+build:
 	docker build -t artturimatias/$(IMAGE) .
 
 clean:

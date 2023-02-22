@@ -14,7 +14,6 @@ https://github.com/kermitt2/pdfalto
 
 	make build
 
-If everything went well, you should have pdfalto binary inside pdfalto directory in the container.
 
 ## Usage
 
